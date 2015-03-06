@@ -1,5 +1,5 @@
 /*
- Leaflet 0.8-dev (4c0f028), a JS library for interactive maps. http://leafletjs.com
+ Leaflet 0.8-dev (ca9c712), a JS library for interactive maps. http://leafletjs.com
  (c) 2010-2015 Vladimir Agafonkin, (c) 2010-2011 CloudMade
 */
 (function (window, document, undefined) {
@@ -7574,6 +7574,8 @@ L.Map.BoxZoom = L.Handler.extend({
 		this._finish();
 
 		if (!this._moved) { return; }
+
+		this._moved = false;
 
 		var bounds = new L.LatLngBounds(
 		        this._map.containerPointToLatLng(this._startPoint),

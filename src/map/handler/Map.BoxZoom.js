@@ -89,7 +89,7 @@ L.Map.BoxZoom = L.Handler.extend({
 
 		if (!this._moved) { return; }
 
-    this._moved = false;
+		this._moved = false;
 
 		var bounds = new L.LatLngBounds(
 		        this._map.containerPointToLatLng(this._startPoint),
