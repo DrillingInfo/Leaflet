@@ -1,5 +1,5 @@
 /*
- Leaflet 1.0.0-beta.2 (81e71fe), a JS library for interactive maps. http://leafletjs.com
+ Leaflet 1.0.0-beta.2 (8670eb9), a JS library for interactive maps. http://leafletjs.com
  (c) 2010-2015 Vladimir Agafonkin, (c) 2010-2011 CloudMade
 */
 (function (window, document, undefined) {
@@ -4292,6 +4292,10 @@ L.Popup = L.Layer.extend({
 		this._content = content;
 		this.update();
 		return this;
+	},
+
+	setAutoPan: function (autoPan) {
+		this.options.autoPan = autoPan;
 	},
 
 	getElement: function () {

@@ -103,6 +103,10 @@ L.Popup = L.Layer.extend({
 		return this;
 	},
 
+	setAutoPan: function (autoPan) {
+		this.options.autoPan = autoPan;
+	},
+
 	getElement: function () {
 		return this._container;
 	},
