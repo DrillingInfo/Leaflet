@@ -135,6 +135,10 @@ L.Popup = L.DivOverlay.extend({
 		}
 	},
 
+	setAutoPan: function (autoPan) {
+		this.options.autoPan = autoPan;
+	},
+
 	getEvents: function () {
 		var events = L.DivOverlay.prototype.getEvents.call(this);
 
